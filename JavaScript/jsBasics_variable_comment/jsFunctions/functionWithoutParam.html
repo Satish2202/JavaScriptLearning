@@ -1,0 +1,109 @@
+ <!-- Function Without parameters -->
+ <!--
+<html>
+<head>
+    <script>
+function myFunction(){
+    document.write("!!!!.....Welcome to tools QA......!!!!")
+}
+    </script>
+</head>
+<body onload=myFunction()></body>
+</html>
+ 
+
+  ****** Function With parameters ******
+ 
+ <html>
+ <body>
+ <h1>JavaScript: Demonstrating function with parameters</h1>
+     <script>
+     	// Create a function which accepts two parameters
+     	function myFunction(personName, siteName) {
+         	document.write("Hello ",personName,"!  Welcome to ",siteName);
+     	}
+     	// Invoke the function with parameters
+     	myFunction('Lakshay','ToolsQA')
+     </script> 
+ </body>
+</html>
+
+
+   ****** Function with a return value ******
+
+<html>
+ <body>
+ <h1>JavaScript: Demonstrating function with return value</h1>
+     <script>
+     	// Create a function which accepts two parameters and return a string
+     	function myFunction(personName, siteName) {
+         	return "Hello "+ personName + "!  Welcome to " + siteName;
+     	}
+     	// Invoke the function with parameters and save the return value in a variable
+     	var message = myFunction('Lakshay','ToolsQA');
+     	document.write(message);
+     </script> 
+ </body>
+</html>
+
+
+  ****** Default Parameters in a function *****
+
+<html>
+ <body>
+ <h1>JavaScript: Demonstrating default value of a parameter</h1>
+     <script>
+     	// Create a function which accepts two parameters and return a string
+     	function myFunction(personName, siteName) {
+         	return "Hello "+ personName + "!  Welcome to " + siteName;
+     	}
+     	// Invoke the function, but don't pass the 2nd parameter
+     	var message = myFunction('Lakshay');
+     	document.write(message);
+     </script>
+ </body>
+</html>
+
+    ***** Anonymous functions *****
+       An anonymous function is a function whose declaration happened without any named identifier to refer to it.
+       As such, an unknown function is usually not accessible after its initial creation.
+
+<html>
+ <body>
+ <h1>JavaScript: Demonstrating anonymous Function</h1>
+     <script>
+     	// Create a anonymous function which accepts two parameters and return a string
+     	var message = function (personName, siteName) {
+         	return "Hello "+ personName + "!  Welcome to " + siteName;
+     	}('Lakshay','ToolsQA'); // Parameters are passed while invoking the method itself
+     	document.write(message);
+     </script>
+ </body>
+</html>
+
+
+    *****  Nested Functions *****
+ince a function returns a value, it can also return a function as a value. 
+So JavaScript allows us to define a function inside another function and return it.
+
+<html>
+ <body>
+ <h1>JavaScript: Demonstrating nested functions</h1>
+     <script>
+     	// Create a function which accepts two parameters and return a string
+     	function myFunction(personName, siteName) {
+      // Define the Nested Function 
+      function siteMessage(personName,siteName) 
+      { 
+      return "Hello "+ personName + "!  Welcome to " + siteName;
+      }
+         	// Return the nested function
+         	return siteMessage(personName,siteName);
+     	}
+     	// Invoke the function with parameters and save the return value in a variable
+     	var message = myFunction('Lakshay','ToolsQA');
+     	document.write(message);
+     </script>
+ </body>
+</html>
+

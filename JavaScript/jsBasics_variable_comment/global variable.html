@@ -1,0 +1,19 @@
+<html>
+<head>
+    <script type="text/javascript">         
+        var myVar;//this is the global variable and it can be accessed in all the functions
+        function checkVariable( ) {
+            myVar = "ToolsQA"; // Assign value to the global variable
+         }                 
+        
+        function clickButton(){
+            alert(myVar); // Print value of the global variable
+        }              
+    </script>
+</head>
+   
+<body onload=checkVariable()>          
+<button onclick="clickButton()">Click me</button>
+   
+</body>
+</html>

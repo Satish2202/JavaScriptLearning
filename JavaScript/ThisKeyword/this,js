@@ -1,0 +1,18 @@
+/* What does “this” refers to when used in a method?
+As we know, if we define functions as properties of objects, they are referred to as methods. 
+If a method uses “this” keyword, it refers to that object and can be used to refer/access the properties of the object.
+
+What does “this” refers to when used alone?
+When we use “this” alone, it refers to the global object, which is an object window in the browser.
+
+What does “this” refers to when used in a function in default mode?
+When we use this in a JavaScript function in default mode, it refers to the global object, 
+which is an object window in the browser.
+
+What does THIS Keyword in JavaScript refer to when used in a function in strict mode?
+As we know that default binding is not allowed in JavaScript’s strict mode, 
+So, when we use ‘this’ in JavaScript function in strict mode, it is undefined.
+
+
+*/
+
